@@ -1,9 +1,9 @@
 **Fruitipedia App - Python Web Basics Exam**
 
 *The app allows the user to browse different fruits including their nutrition info, description, name, and image. The user can create, edit, or delete fruits at any time. He/ She can also edit or delete his/ her profile.*
-1. # **Skeleton**
+# **Skeleton**
 You are provided with all the needed **HTML pages**, **images,** and **CSS** files for the project.
-1. # **Database**
+# **Database**
 You will need **2 models**:
 - ### **Profile Model**
   - **First Name**
@@ -39,7 +39,7 @@ You will need **2 models**:
     - Text field, **optional.**
 
 **Note: the project will be examined only on the user side; models will NOT be tested on the admin site with a superuser profile.**
-1. # **Routes**
+# **Routes**
 - <http://localhost:8000/> - index page
 - <http://localhost:8000/dashboard/> - dashboard page
 - <http://localhost:8000/create/> - fruit create page
@@ -52,7 +52,7 @@ You will need **2 models**:
 - <http://localhost:8000/profile/delete/> - profile delete page
 
 
-1. # **Pages**
+# **Pages**
 ## **Index page - 10p**
 **Template file**: **"index.html"**
 
