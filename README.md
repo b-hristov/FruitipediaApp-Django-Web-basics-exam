@@ -161,7 +161,7 @@ When you click on the **"Edit"** button:
 - **If** the fruit is **successfully edited**,** you should be redirected to the **dashboard** **page**.
 - **Otherwise**, the form should show the **appropriate validation errors**.
 
-`	`![](https://res.cloudinary.com/dpu6f6jc5/image/upload/v1687612443/b3d697d6-e091-43be-a041-e2c5ee87fcf8.008_ryzldq.png)
+![](https://res.cloudinary.com/dpu6f6jc5/image/upload/v1687612443/b3d697d6-e091-43be-a041-e2c5ee87fcf8.008_ryzldq.png)
 ## 7. **Delete Fruit Page**
 Template file: **"delete-fruit.html"**
 
