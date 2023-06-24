@@ -1,9 +1,11 @@
+# **Task Description:**
+
 **Fruitipedia App - Python Web Basics Exam**
 
 *The app allows the user to browse different fruits including their nutrition info, description, name, and image. The user can create, edit, or delete fruits at any time. He/ She can also edit or delete his/ her profile.*
-# **Skeleton**
+## **Skeleton**
 You are provided with all the needed **HTML pages**, **images,** and **CSS** files for the project.
-# **Database**
+## **Database**
 You will need **2 models**:
 - ### **Profile Model**
   - **First Name**
@@ -39,7 +41,7 @@ You will need **2 models**:
     - Text field, **optional.**
 
 **Note: the project will be examined only on the user side; models will NOT be tested on the admin site with a superuser profile.**
-# **Routes**
+## **Routes**
 - <http://localhost:8000/> - index page
 - <http://localhost:8000/dashboard/> - dashboard page
 - <http://localhost:8000/create/> - fruit create page
@@ -52,8 +54,9 @@ You will need **2 models**:
 - <http://localhost:8000/profile/delete/> - profile delete page
 
 
-# **Pages**
-## **Index page - 10p**
+## **Pages**:
+-----------------------------------
+## 1. **Index page**
 **Template file**: **"index.html"**
 
 The page consists of:
@@ -73,7 +76,7 @@ The **"Dashboard"**, **"Add Fruit"**, and **"Profile"** links on the navigation 
 
 ![](https://res.cloudinary.com/dpu6f6jc5/image/upload/v1687612443/b3d697d6-e091-43be-a041-e2c5ee87fcf8.002_qbifpy.png)
 
-## **Create Profile Page - 10p**
+## 2. **Create Profile Page**
 **Template file**: **"create-profile.html"**
 
 The page consists of:
@@ -92,7 +95,7 @@ The page consists of:
 
 ![](https://res.cloudinary.com/dpu6f6jc5/image/upload/v1687612443/b3d697d6-e091-43be-a041-e2c5ee87fcf8.003_xox6z2.png)
 
-## **Dashboard Page - 10p**
+## 3. **Dashboard Page**
 **Template file**: **"dashboard.html"**
 
 The **dashboard page shows all fruits which have been created by the user.** 
@@ -114,7 +117,7 @@ If the **user** **has some** **fruits,** the page should have the following:
 - A **button** **"More Info"** leading to the **details page** for the selected fruit
 
 ![](https://res.cloudinary.com/dpu6f6jc5/image/upload/v1687612443/b3d697d6-e091-43be-a041-e2c5ee87fcf8.005_khwwkb.png)
-## **Create Fruit Page - 10p**
+## 4. **Create Fruit Page**
 Template file: **"create-fruit.html"**
 
 The page consists of:
@@ -133,7 +136,7 @@ The page consists of:
 
 ![](https://res.cloudinary.com/dpu6f6jc5/image/upload/v1687612443/b3d697d6-e091-43be-a041-e2c5ee87fcf8.006_utgafl.png)
 
-## **Fruit Details Page - 10p**
+## 5. **Fruit Details Page**
 Template file: **"details-fruit.html"** 
 
 This page contains a fruit’s information. It should have the following:
@@ -148,7 +151,7 @@ This page contains a fruit’s information. It should have the following:
 ![](https://res.cloudinary.com/dpu6f6jc5/image/upload/v1687612443/b3d697d6-e091-43be-a041-e2c5ee87fcf8.007_dudqcc.png)
 
 
-## **Edit Fruit Page - 10p**
+## 6. **Edit Fruit Page**
 Template file: **"edit-fruit.html"**
 
 On the page, the form must be **filled** with **information** about the **fruit** we want **to edit.** Each field has **a label: "Name:"**, **"Image URL:"**, **"Description:"**,** and **"Nutrition:"**.
@@ -159,7 +162,7 @@ When you click on the **"Edit"** button:
 - **Otherwise**, the form should show the **appropriate validation errors**.
 
 `	`![](https://res.cloudinary.com/dpu6f6jc5/image/upload/v1687612443/b3d697d6-e091-43be-a041-e2c5ee87fcf8.008_ryzldq.png)
-## **Delete Fruit Page - 10p**
+## 7. **Delete Fruit Page**
 Template file: **"delete-fruit.html"**
 
 On the page, the form must be **filled** with the **fruit's information**, and **all the fields** should be **disabled.** Each field has **a label: "Name:"**, **"Image URL:"** and **"Description:"**.
@@ -169,7 +172,7 @@ When you click on the **"Delete"** button, the **fruit** is **deleted from the d
 The deleted fruit should be **no longer visible in the app**.
 
 ![](https://res.cloudinary.com/dpu6f6jc5/image/upload/v1687612444/b3d697d6-e091-43be-a041-e2c5ee87fcf8.009_u9dovw.png)
-## **Profile Details Page - 10p**
+## 8. **Profile Details Page**
 Template file: **"details-profile.html"**
 
 This page contains the **user's information**. It should have the following:
@@ -189,7 +192,7 @@ This page contains the **user's information**. It should have the following:
 **If the user doesn't have a profile picture:** 
 
 ![](https://res.cloudinary.com/dpu6f6jc5/image/upload/v1687612443/b3d697d6-e091-43be-a041-e2c5ee87fcf8.011_innnjf.png)
-## **Edit Profile Page - 10p**
+## 9. **Edit Profile Page**
 Template file: **"edit-profile.html"**
 
 On the page, the form must be **filled** with the **information** of the **profile** we want **to edit. The profile** **edition form** has **additional fields as shown below**:
@@ -209,7 +212,7 @@ When you click on the **"Edit"** button:
 ![](https://res.cloudinary.com/dpu6f6jc5/image/upload/v1687612443/b3d697d6-e091-43be-a041-e2c5ee87fcf8.012_jflbd3.png)
 
 
-## **Delete Profile Page - 10p**
+## 10. **Delete Profile Page**
 Template file: **"delete-profile.html"**
 
 Deleting a profile should delete the profile info and **all of his /her added fruits.** After **deletion**, the user should be redirected to the **index page**.
