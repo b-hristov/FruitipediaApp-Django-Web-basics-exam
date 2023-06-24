@@ -1,8 +1,11 @@
 from django.shortcuts import render, redirect
 from FruitipediaApp.apps.fruit.forms import FruitCreateForm, FruitEditForm, FruitDeleteForm
 from FruitipediaApp.apps.fruit.models import Fruit
+from FruitipediaApp.apps.common.views import get_profile
 
 # Create your views here.
+
+profile = get_profile()
 
 
 def create_fruit(request):
@@ -15,7 +18,8 @@ def create_fruit(request):
             return redirect('dashboard')
 
     context = {
-        'form': form
+        'form': form,
+        'profile': profile
     }
 
     return render(
@@ -29,10 +33,10 @@ def details_fruit(request, pk):
     fruit = Fruit.objects \
         .filter(pk=pk) \
         .get()
-    # album = Album.objects.get(pk=pk)
 
     context = {
         'fruit': fruit,
+        'profile': profile
     }
 
     return render(
@@ -57,7 +61,8 @@ def edit_fruit(request, pk):
 
     context = {
         'form': form,
-        'fruit': fruit
+        'fruit': fruit,
+        'profile': profile
     }
 
     return render(
@@ -82,7 +87,8 @@ def delete_fruit(request, pk):
 
     context = {
         'form': form,
-        'fruit': fruit
+        'fruit': fruit,
+        'profile': profile
     }
 
     return render(

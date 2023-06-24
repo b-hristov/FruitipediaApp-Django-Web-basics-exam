@@ -1,19 +1,16 @@
-{% extends 'common/dashboard-navs.html' %}
+{% extends 'base.html' %}
 {% load static %}
 
 {% block content %}
+    <!-- Delete Profile Form -->
     <section id="edit">
         <div class="form">
             <h1>Are you sure you want to delete your profile?</h1>
-            <!-- Delete Profile Form -->
             <form method="post" action="{% url 'delete profile' %}" id='delete' class="register-form">
-                <!-- Confirm Button -->
                 {{ form }}
                 <button type="submit">Yes</button>
                 {% csrf_token %}
             </form>
-            <!-- End Delete Profile Form -->
         </div>
-
     </section>
 {% endblock %}

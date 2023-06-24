@@ -23,7 +23,7 @@ def index(request):
     profile = get_profile()
     if profile:
         context = {
-            'created_user': profile
+            'profile': profile
         }
         return render(
             request,
@@ -39,17 +39,13 @@ def index(request):
 
 def dashboard(request):
     fruits = get_fruits()
-    if fruits:
-        context = {
-            'fruits': fruits
-        }
-        return render(
-            request,
-            'common/dashboard.html',
-            context
-        )
+    profile = get_profile()
+    context = {
+        'fruits': fruits,
+        'profile': profile
+    }
     return render(
         request,
         'common/dashboard.html',
+        context
     )
-

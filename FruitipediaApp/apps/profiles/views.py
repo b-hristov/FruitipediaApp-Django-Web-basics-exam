@@ -1,10 +1,11 @@
 from django.shortcuts import render, redirect
-
 from FruitipediaApp.apps.fruit.models import Fruit
 from FruitipediaApp.apps.profiles.forms import ProfileCreateForm, ProfileEditForm, ProfileDeleteForm
 from FruitipediaApp.apps.common.views import get_profile
 
 # Create your views here.
+
+profile = get_profile()
 
 
 def create_profile(request):
@@ -28,7 +29,6 @@ def create_profile(request):
 
 
 def details_profile(request):
-    profile = get_profile()
     posts_count = Fruit.objects.count()
 
     context = {
@@ -44,8 +44,6 @@ def details_profile(request):
 
 
 def edit_profile(request):
-    profile = get_profile()
-
     if request.method == 'GET':
         form = ProfileEditForm(instance=profile)
     else:
@@ -67,8 +65,6 @@ def edit_profile(request):
 
 
 def delete_profile(request):
-    profile = get_profile()
-
     if request.method == 'GET':
         form = ProfileDeleteForm(instance=profile)
     else:
